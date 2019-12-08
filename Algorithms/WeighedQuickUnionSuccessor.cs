@@ -1,19 +1,17 @@
 using System;
-namespace CourseEraDSA.Algorithms{
-      class WeighedQuickUnion{
+namespace  CourseEraDSA.Algorithms {
+public class WeighedQuickUnionSuccessor{
         protected int[] input;
         protected int[] depth;
-        
-        public WeighedQuickUnion(int count){
+        public WeighedQuickUnionSuccessor(int count){
             input=new int[count];
             depth=new int[count];
-           
             for(int i=0;i<input.Length;i++){
                 input[i] = i;
                 depth[i] = 0;
             }
         }
-        public virtual void Union(int a, int b){
+        public void Union(int a, int b){
             var LeftRoot=Root(a);
             var RightRoot=Root(b);
             if(depth[LeftRoot]<=depth[RightRoot]){
@@ -31,7 +29,7 @@ namespace CourseEraDSA.Algorithms{
             }
             
         }
-        protected int Root(int a){
+        private int Root(int a){
 
             if(input[a]==a){
                 return a;
@@ -61,8 +59,6 @@ namespace CourseEraDSA.Algorithms{
             return result;
         }
 
-        
+}
 
-        
-    }
 }

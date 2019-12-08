@@ -17,26 +17,37 @@ namespace CourseEraDSA
             // obj.Print();
            // obj.PrintDepth();
 
-             var obj1 = new WeighedQuickUnion(10);
-            obj1.Union(3,4);
-            obj1.PrintMaxArray();
-            Console.WriteLine(obj1.find(3));
-            obj1.Union(3,8);
-            obj1.PrintMaxArray();
-            Console.WriteLine(obj1.find(3));
-            obj1.Union(6,5);
-            Console.WriteLine(obj1.find(5));
-            obj1.Union(9,4);
-            Console.WriteLine(obj1.find(3));
-            obj1.Union(2,1);
-            obj1.Union(5,0);
-            obj1.Union(7,2);
-            obj1.Union(6,1);
-            obj1.Union(7,3);
-            Console.WriteLine(obj1.find(3));
-            // obj1.PrintInput();
-            // obj1.PrintDepth();
+            //  var obj1 = new WeighedQuickUnionFind(10);
+            // obj1.Union(3,4);
+            // obj1.PrintMaxArray();
+            // Console.WriteLine(obj1.find(3));
+            // obj1.Union(3,8);
+            // obj1.PrintMaxArray();
+            // Console.WriteLine(obj1.find(3));
+            // obj1.Union(6,5);
+            // Console.WriteLine(obj1.find(5));
+            // obj1.Union(9,4);
+            // Console.WriteLine(obj1.find(3));
+            // obj1.Union(2,1);
+            // obj1.Union(5,0);
+            // obj1.Union(7,2);
+            // obj1.Union(6,1);
+            // obj1.Union(7,3);
+            // Console.WriteLine(obj1.find(3));
+            // // obj1.PrintInput();
+            // // obj1.PrintDepth();
 
+        // var obj2=new BinarySearch(4);
+        //     obj2.AddItem(1);
+        //     obj2.AddItem(3);
+        //     obj2.AddItem(5);
+        //     obj2.AddItem(6);
+        //     Console.WriteLine(obj2.Find(7));
+
+        var obj3=new Percolation(3);
+        obj3.open(1,1);
+        obj3.open(0,0);
+        obj3.open(2,2);
         }
     }
   
