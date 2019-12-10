@@ -44,10 +44,13 @@ namespace CourseEraDSA
         //     obj2.AddItem(6);
         //     Console.WriteLine(obj2.Find(7));
 
-        var obj3=new Percolation(3);
-        obj3.open(1,1);
-        obj3.open(0,0);
-        obj3.open(2,2);
+
+        // var obj3=new Percolation(3);
+        // obj3.open(1,1);
+        // obj3.open(0,0);
+        // obj3.open(2,2);
+
+        StackUsingLinkedListClient.test();
         }
     }
   
